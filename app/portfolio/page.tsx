@@ -17,7 +17,7 @@ const IGLives = igLives.map((d) => (
 const IGStories = igStories.map((d) => (
   <div
     className="w-[300px] h-[300px] overflow-hidden rounded-xl shadow-lg"
-    id={d.id}
+    key={d.id}
   >
     <Image src={d.photo} alt={d.description} height={1080} width={1080} />
     <p>{d.description}</p>
