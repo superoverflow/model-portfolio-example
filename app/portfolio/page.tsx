@@ -3,7 +3,7 @@ import igLives from "./igLives.json";
 import igStories from "./igStories.json";
 
 const IGLives = igLives.map((d) => (
-  <a href={d.link}>
+  <a key={d.id} href={d.link}>
     <div
       className="w-[300px] h-[300px] overflow-hidden rounded-xl shadow-lg"
       id={d.id}
@@ -27,15 +27,15 @@ const IGStories = igStories.map((d) => (
 const page = () => {
   return (
     <>
-    <div className="flex w-full space-between">
-    <span>IG Lives</span>
-    <span>IG Stories</span>
-    <span>Photos</span>
-    </div>
-    <main className="flex min-h-screen flex-col items-center justify-between p-8 gap-4">
-      {IGLives}
-      {IGStories}
-    </main>
+      <div className="flex w-full space-between">
+        <span>IG Lives</span>
+        <span>IG Stories</span>
+        <span>Photos</span>
+      </div>
+      <main className="flex min-h-screen flex-col items-center justify-between p-8 gap-4">
+        {IGLives}
+        {IGStories}
+      </main>
     </>
   );
 };
