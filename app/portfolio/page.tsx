@@ -1,15 +1,36 @@
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 
 import Image from "next/image";
 import igLives from "./igLives.json";
 import igStories from "./igStories.json";
+import { InstagramIcon, YoutubeIcon } from "lucide-react";
+
+function SectionHeader({
+  Icon,
+  text,
+}: {
+  Icon: React.ReactNode;
+  text: string;
+}) {
+  return (
+    <>
+      <Separator className="my-4" />
+      <div className="flex items-center gap-4">
+        {Icon}
+        <span className="text-2xl font-bold uppercase align-middle">
+          {text}
+        </span>
+      </div>
+    </>
+  );
+}
 
 const IGLives = igLives.map((d) => (
   <a key={d.id} href={d.link}>
     <div className="w-[300px] h-[300px] overflow-hidden rounded-xl shadow-lg">
       <Image src={d.photo} alt={d.description} height={1080} width={1920} />
     </div>
-    <span>{d.description}</span>
+    <span className="pt-4">{d.description}</span>
   </a>
 ));
 
@@ -31,11 +52,16 @@ const page = () => {
         <span>IG Stories</span>
         <span>Photos</span>
       </div>
-      <Separator className="my-4" />
-      <span> IG Lives </span>
+      <SectionHeader
+        Icon={<InstagramIcon size={24} />}
+        text="lives"
+      />
       {IGLives}
-      <Separator className="my-4" />
-      <span> IG Stories </span>
+
+      <SectionHeader
+        Icon={<InstagramIcon size={24} />}
+        text="stories"
+      />
       {IGStories}
     </main>
   );
