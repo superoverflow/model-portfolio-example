@@ -1,0 +1,27 @@
+[
+    {
+        "type": "Youtube",
+        "link": "https://www.youtube.com/@tiffanyinlondon/",
+        "description": "My youtube channel"
+    },
+    {
+        "type": "Youtube",
+        "link": "https://www.youtube.com/@tiffanybbgwow5276/",
+        "description": "My twitch gaming channel"
+    },
+    {
+        "type": "Twitch",
+        "link": "https://www.twitch.tv/tiffany1205",
+        "description": "My twitch gaming channel"
+    },
+    {
+        "type": "Instagram",
+        "link": "https://www.instagram.com/tiffanytsui_t/",
+        "description": "My personal instagram"
+    },
+    {
+        "type": "Instagram",
+        "link": "https://www.instagram.com/wawainlondon/",
+        "description": "Wawa fans' page 😍"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "01",
+        "link": "https://www.instagram.com/p/Ck0-FrJjspC/",
+        "description" : "Delvaux",
+        "photo": "/igStories/01.png"
+    },
+    {
+        "id": "02",
+        "link": "https://www.instagram.com/p/CjDoF14DqaT/",
+        "description" : "ACND Studio",
+        "photo": "/igStories/02.png"
+    },
+    {
+        "id": "03",
+        "link": "https://www.instagram.com/p/CixSHoMj_vn/",
+        "description" : "Prada",
+        "photo": "/igStories/03.png"
+    },
+    {
+        "id": "04",
+        "link": "https://www.instagram.com/p/CiSa7a1jDHl/",
+        "description" : "Fendi",
+        "photo": "/igStories/04.png"
+    }
+]
