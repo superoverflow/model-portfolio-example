@@ -1,3 +1,5 @@
+import { Separator } from "@/components/ui/separator"
+
 import Image from "next/image";
 import igLives from "./igLives.json";
 import igStories from "./igStories.json";
@@ -17,22 +19,25 @@ const IGStories = igStories.map((d) => (
       <Image src={d.photo} alt={d.description} height={1080} width={1080} />
       <p>{d.description}</p>
     </div>
+    <span>{d.description}</span>
   </a>
 ));
 
 const page = () => {
   return (
-    <>
+    <main className="flex min-h-screen flex-col items-center justify-between p-8 gap-4">
       <div className="flex w-full space-between">
         <span>IG Lives</span>
         <span>IG Stories</span>
         <span>Photos</span>
       </div>
-      <main className="flex min-h-screen flex-col items-center justify-between p-8 gap-4">
-        {IGLives}
-        {IGStories}
-      </main>
-    </>
+      <Separator className="my-4" />
+      <span> IG Lives </span>
+      {IGLives}
+      <Separator className="my-4" />
+      <span> IG Stories </span>
+      {IGStories}
+    </main>
   );
 };
 

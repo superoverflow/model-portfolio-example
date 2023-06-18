@@ -2,19 +2,19 @@
     {
         "id": "01",
         "link": "https://www.instagram.com/reel/CljJxjAjI2B/",
-        "description" : "5K view live broadcast",
+        "description" : "Live broadcast of luxury products #1",
         "photo": "/igLives/01.jpeg"
     },
     {
         "id": "02",
         "link": "https://www.instagram.com/reel/Cl3xDNdjW0L/",
-        "description" : "Live broadcast of luxury products",
+        "description" : "Live broadcast of luxury products #2",
         "photo": "/igLives/02.jpeg"
     },
     {
         "id": "03",
         "link": "https://www.instagram.com/reel/CkbO8haDmLF/",
-        "description" : "Live broadcast of luxury products",
+        "description" : "Live broadcast of luxury products #3",
         "photo": "/igLives/03.jpeg"
     }
 ]
